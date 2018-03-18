@@ -24,7 +24,7 @@
       <h1>Saved Links</h1>
       <ul>
         <% @links.each {|link| %>
-          <li> <%=link%> </li>
+          <li id="link-<%= link.id %>"><%= link.url %></li>
         <% } %>
       </ul>
     </div>
